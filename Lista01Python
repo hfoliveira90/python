@@ -1,0 +1,94 @@
+# Exercício 1
+
+a = int(input ('N1:'))
+b = int(input ('N2:'))
+print (a + b)
+
+
+
+# Exercício 2
+
+m = int(input ('metros:'))
+print (f'milimetros:{m*1000}')
+
+
+
+# Exercício 3
+
+d = int(input ('dias:'))
+h = int(input ('horas:')) 
+m = int(input ('minutos:'))
+s = int(input ('segundos:'))
+total = d*24*60*60 + h*60*60 + m*60 + s
+print (f'total_segundos: {total}')
+
+
+# Exercício 4
+
+salario = float(input ('Salário: R$'))
+porcentagem = float(input ('Aumento_%:'))
+aumento = salario * porcentagem / 100
+novo_salario = salario + aumento
+print (f'Aumento: R${aumento:.2f}')
+print (f'Novo Salário: R${novo_salario:.2f}')
+
+
+# Exercício 5
+
+preço = float(input ('Preço: R$'))
+percentual_desconto = float(input ('Desconto_%:'))
+desconto = preço * percentual_desconto/100
+novo_preço = preço - desconto
+print (f'O desconto é de: R${desconto:.2f}')
+print (f'Preço com desconto: R${novo_preço:.2f}')
+
+
+# Exercício 6
+
+distancia = float(input ('Distância em Km:'))
+velocidade = float(input ('Velocidade em Km/h:'))
+tempo = distancia / velocidade
+print (f'Tempo estimado: {tempo:.1f} horas')
+
+
+# Exercício 7
+
+C = float(input ('Temperatura_Celsius:'))
+F = 9*C/5 + 32
+print (f'Temperatura_Fahrenheit: {F:.1f}')
+
+
+# Exercício 8
+
+F = float(input ('Temperatura_Fahrenheit:'))
+C = (F-32) / 1.8
+print (f'Temperatura_Celsius: {C:.1f}')
+
+
+# Exercício 9
+
+km = float(input ('Km percorridos:'))
+d = float(input('Dias:'))
+preço = (km*0.15) + (60*d)
+print (f'Preço_total: R$ {preço:.2f}')
+
+
+# Exercício 10
+
+# 24 horas = 1440 minutos
+# Cada cigarro fumado = 10 minutos 
+# Um dia equivale a 144 cigarros
+# Um ano equivale 365 dias
+
+cigarros = int(input ('Cigarros fumados por dia:'))
+anos = int(input ('Fumante há quantos anos:'))
+total_cigarros = cigarros / 144
+dias_perdidos = anos * 365 * total_cigarros
+print (f'Foram perdidos {dias_perdidos:.1f} dias')
+
+
+# Exercício 11
+
+# Quantos dígitos há em 2 elevado a dez mil
+
+print (len (str (2**10000)))
