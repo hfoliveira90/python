@@ -1,0 +1,62 @@
+# Exercício 1:
+
+nota = float (input(f'Insira uma nota: '))
+
+while nota < 0 or nota > 10:
+    print (f'Essa nota é inválida. Notas válidas de 0 a 10.')
+    nota = float (input (f'Favor inserir uma nota: '))
+
+if nota >=0 or nota<=10:
+    print ('Nota válida')
+
+
+
+# Exercício 2:
+
+usuario = input ('Nome de usuário: ')
+senha = input ('Digite sua senha: ')
+
+while senha==usuario:
+    print (f'Senha não pode ter o mesmo nome do usuário.')
+    usuario = input ('Nome de usuário: ')
+    senha = input ('Digite sua senha: ')
+
+
+# Exercício 3:
+
+A = 80000
+B = 200000
+anos = 0
+
+while A<=B:
+    A = A + A*0.03
+    B = B + B*0.015
+    anos = anos + 1
+
+print (f'{anos} anos')
+
+
+# Exercício 4:
+
+x = int(input('Digite um valor: '))
+
+a, b = 1, 1
+k = 1
+
+while k <= x-2:
+    a, b = b, a+b
+    k = k+1
+
+print (b)
+
+
+
+# Exercício 5:
+
+a = int (input (f'Insira o valor de A:  '))
+b = int (input (f'Insira o valor de B:  '))
+
+while a % b != 0:
+    a, b = b, a % b
+
+print (f'MDC = {b}')
